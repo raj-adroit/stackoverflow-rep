@@ -9,7 +9,8 @@ This gem used to find reputation for a given stackoverflow userid.
     gem install stackoverflow-rep
     
 == Usage
-
+    require 'stackoverflow-rep'
+    
     1689539.find_rep
     #=> 566
 
