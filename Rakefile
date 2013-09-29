@@ -14,13 +14,14 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "stackoverflow-reputation"
-  gem.homepage = "http://github.com/raj-adroit/stackoverflow-reputation"
+  gem.name = "stackoverflow-rep"
+  gem.homepage = "http://github.com/raj-adroit/stackoverflow-rep"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{stackoverflow-rep gem to find stackoverflow reputation}
+  gem.description = %Q{This gem used to find reputation for a given stackoverflow userid}
   gem.email = "raja.nice23@gmail.com"
   gem.authors = ["Raj Adroit"]
+  gem.files = Dir.glob('lib/**/*.rb')
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
@@ -47,7 +48,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "stackoverflow-reputation #{version}"
+  rdoc.title = "stackoverflow-rep #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
