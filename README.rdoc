@@ -1,6 +1,17 @@
 = stackoverflow-rep
 
+{<img src="https://badge.fury.io/rb/stackoverflow-rep.png" alt="Gem Version" />}[http://badge.fury.io/rb/stackoverflow-rep]
+
 This gem used to find reputation for a given stackoverflow userid.
+
+== Installation
+    
+    gem install stackoverflow-rep
+    
+== Usage
+
+    1689539.find_rep
+    #=> 566
 
 == Contributing to stackoverflow-rep
  
