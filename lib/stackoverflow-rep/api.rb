@@ -6,7 +6,7 @@ module Adroit
 				@so_page = Nokogiri::HTML(open(@so_url))
 				@reputation = 0
 				@so_page.css('div.reputation span a').each do |rep|
-					@reputation = rep.content
+					@reputation = rep.content.to_i
 				end
 				@reputation
 			rescue
